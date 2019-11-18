@@ -1,7 +1,7 @@
 
 body{
-    max-width: 900px;
-    width: 100%;
+    //max-width: 900px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -16,16 +16,42 @@ p,a{
 .Nav-Bar{
     display: flex;
     justify-content: space-between;
-
-    nav {
+    .logo-image{
+        height: auto;
+        width: auto;
+        max-height: 72px;
+        max-width: 250px;
+    }
+    .nav-links {
         width: 40%;
         margin: 2% 2%;
         display: flex;
-              
-        a{
-            text-decoration: none;
-            text-transform: uppercase;
-            margin: auto 2%;
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        
+            li {
+            list-style: none;
+            padding-right: 10%;
+            width: 100%;
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    margin: 4%;
+                }
+            }
+        }
+    }
+    .burger {
+        display: none;
+
+        div{
+            width: 25px;
+            height: 3px;
+            background-color: red;
+            margin: 5px;
         }
     } 
 }
@@ -53,6 +79,45 @@ footer{
         h3{
             justify-content: space-around;
             display: flex;
+        }
+    }
+}
+
+@media @phone {
+    body {
+        overflow-x: hidden;
+        
+        .Nav-Bar{
+
+            .logo-image{
+                display: flex;
+                margin: auto;
+            }
+            .nav-links {
+                position: absolute;
+                right: 0px;
+                height: 92vh;
+                top: 8vh;
+                background-color: @primary-color;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                transform: translatex(100%);
+                
+                ul {
+                    flex-direction: column;
+                    li {
+                        opacity: 0;
+                        display: flex;
+                        justify-content: center;
+                    }    
+                }
+                .burger {
+                    display: block;
+                }
+            }
+    
         }
     }
 }
