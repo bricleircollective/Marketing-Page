@@ -15,32 +15,26 @@ p,a{
 }
 .Nav-Bar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+
     .logo-image{
         height: auto;
         width: auto;
         max-height: 72px;
         max-width: 250px;
     }
-    .nav-links {
-        width: 40%;
-        margin: 2% 2%;
+    .nav-links{
         display: flex;
-        
-        ul {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-        
-            li {
+        justify-content: space-around;
+        width: 40%;
+        li{
             list-style: none;
-            padding-right: 10%;
-            width: 100%;
-                a{
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    margin: 4%;
-                }
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
             }
         }
     }
@@ -50,7 +44,7 @@ p,a{
         div{
             width: 25px;
             height: 3px;
-            background-color: red;
+            background-color: @primary-color;
             margin: 5px;
         }
     } 
@@ -98,12 +92,13 @@ footer{
                 right: 0px;
                 height: 92vh;
                 top: 8vh;
-                background-color: @primary-color;
+                background-color: rgb(240, 243, 243);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 50%;
                 transform: translatex(100%);
+                transition: transform 0.5s ease-in;
                 
                 ul {
                     flex-direction: column;
@@ -111,13 +106,28 @@ footer{
                         opacity: 0;
                         display: flex;
                         justify-content: center;
-                    }    
+                    }
                 }
-                .burger {
-                    display: block;
+            }
+            .burger {
+                display: block;
+                cursor: pointer;
+            }
+            .nav-active{
+                transform: translateX(0%);
+            }
+            @keyframes navLinkFade{
+                from{
+                    opacity: 0;
+                    transform: translateX(50px);
+                }
+                to{
+                    opacity: 1;
+                    transform: translateX(0px);
                 }
             }
     
         }
     }
 }
+
