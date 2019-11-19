@@ -22,8 +22,7 @@ p,a{
     .logo-image{
         height: auto;
         width: auto;
-        max-height: 72px;
-        max-width: 250px;
+
     }
     .nav-links{
         display: flex;
@@ -46,6 +45,7 @@ p,a{
             height: 3px;
             background-color: @primary-color;
             margin: 5px;
+            transition: all 0.3s ease;
         }
     } 
 }
@@ -126,7 +126,17 @@ footer{
                     transform: translateX(0px);
                 }
             }
-    
+            .toggle{
+                .line1{
+                    transform: rotate(-45deg) translate(-5px, 6px);
+                }
+                .line2{
+                    opacity: 0;
+                }
+                .line3{
+                    transform: rotate(45deg) translate(-5px, -6px);
+                }
+            }
         }
     }
 }
