@@ -25,15 +25,19 @@
 }
 .Container .Top-Left .holder .Button-Google {
   border-radius: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .Container .Top-Left .holder .Button-Google:hover {
   color: #F4B400;
 }
 .Container .Top-Left .holder .Button-Apple {
   border-radius: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .Container .Top-Left .holder .Button-Apple:hover {
-  color: #555555;
+  color: #007AFF;
 }
 .Container .Top-Right {
   margin: auto 2%;
@@ -45,6 +49,13 @@
 }
 .Container .Bottom {
   display: flex;
+  justify-content: center;
+}
+.Container .Bottom .Bottom-Left {
+  margin: 5%;
+}
+.Container .Bottom .Bottom-Right {
+  margin: 5%;
 }
 body {
   width: 90%;
@@ -84,6 +95,9 @@ a {
   text-transform: uppercase;
   font-weight: bold;
 }
+.Nav-Bar .nav-links li a:hover {
+  color: #1789f3;
+}
 .Nav-Bar .burger {
   display: none;
 }
@@ -112,6 +126,11 @@ footer .footer-nav nav a {
   padding: 1%;
   letter-spacing: 2px;
   text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+footer .footer-nav nav a:hover {
+  color: #1789f3;
 }
 footer .copyright {
   width: 100%;
