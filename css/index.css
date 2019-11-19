@@ -1,3 +1,4 @@
+@import 'fontawesome-all.min.css';
 .Container .Top {
   margin: 2% 0;
   display: flex;
@@ -21,6 +22,18 @@
 .Container .Top-Left .holder {
   display: flex;
   justify-content: space-around;
+}
+.Container .Top-Left .holder .Button-Google {
+  border-radius: 5px;
+}
+.Container .Top-Left .holder .Button-Google:hover {
+  color: #F4B400;
+}
+.Container .Top-Left .holder .Button-Apple {
+  border-radius: 5px;
+}
+.Container .Top-Left .holder .Button-Apple:hover {
+  color: #555555;
 }
 .Container .Top-Right {
   margin: auto 2%;
