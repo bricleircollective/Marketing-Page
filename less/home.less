@@ -117,6 +117,10 @@
         img {
             border-radius: 10px;
             box-shadow: 3px 3px 2px grey;
+            opacity: 0.7;
+            &:hover{
+                opacity: 1;
+            }
         }
     }
     .Bottom {
@@ -153,6 +157,33 @@
             align-items: center;
             @media @phone, @tablet{
                 width: 100%;
+            }
+            .Title{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                h2{
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    a{
+                        display: flex;
+                        width: 60%;
+                        align-items: center;
+                        justify-content: center;
+                        background: #F4B400;
+                        text-decoration: none;
+                        color: white;
+                        border-radius: 10px;
+                        padding: 1%;
+                        text-shadow: 1px 1px black;
+                        opacity: 0.7;
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
             }
         }
     }

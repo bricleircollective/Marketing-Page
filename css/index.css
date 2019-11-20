@@ -118,6 +118,10 @@
 .Container .Banner img {
   border-radius: 10px;
   box-shadow: 3px 3px 2px grey;
+  opacity: 0.7;
+}
+.Container .Banner img:hover {
+  opacity: 1;
 }
 .Container .Bottom {
   display: flex;
@@ -161,6 +165,33 @@
   .Container .Bottom .Bottom-Right {
     width: 100%;
   }
+}
+.Container .Bottom .Bottom-Right .Title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Container .Bottom .Bottom-Right .Title h2 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.Container .Bottom .Bottom-Right .Title h2 a {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  background: #F4B400;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 1%;
+  text-shadow: 1px 1px black;
+  opacity: 0.7;
+}
+.Container .Bottom .Bottom-Right .Title h2 a:hover {
+  opacity: 1;
 }
 body {
   width: 90%;
