@@ -41,6 +41,9 @@
   display: flex;
   justify-content: space-around;
 }
+.Container .Top-Left .holder .button-wrapper p {
+  color: black;
+}
 .Container .Top-Left .holder .Button-Google {
   border-radius: 5px;
   padding-left: 5%;
