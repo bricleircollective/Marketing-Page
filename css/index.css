@@ -24,6 +24,11 @@
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Top-Left {
+    width: 80%;
+  }
+}
 .Container .Top-Left .phone {
   max-width: 100%;
 }
@@ -41,6 +46,7 @@
   padding-left: 5%;
   padding-right: 5%;
   box-shadow: 3px 2px 2px grey;
+  cursor: pointer;
 }
 .Container .Top-Left .holder .Button-Google:hover {
   color: #F4B400;
@@ -50,6 +56,7 @@
   padding-left: 5%;
   padding-right: 5%;
   box-shadow: 3px 2px 2px grey;
+  cursor: pointer;
 }
 .Container .Top-Left .holder .Button-Apple:hover {
   color: #007AFF;
@@ -75,6 +82,7 @@
 }
 .Container .Top-Right .email-log-in form input {
   width: 40%;
+  padding: 2%;
   border-radius: 10px;
 }
 @media (max-width: 500px), (max-width: 800px) {
@@ -84,11 +92,13 @@
   }
 }
 .Container .Top-Right .email-log-in #submit {
-  width: 20%;
+  width: 30%;
+  padding: 2%;
   color: white;
   font-weight: bold;
   background: #38b6ff;
   border-radius: 10px;
+  cursor: pointer;
 }
 .Container .Top-Right .email-log-in #submit:hover {
   background: #12d112;
@@ -110,12 +120,27 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Container .Bottom p {
+    color: black;
+  }
+}
 .Container .Bottom .Bottom-Left {
   width: 50%;
   margin: 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Bottom .Bottom-Left {
+    width: 100%;
+  }
 }
 .Container .Bottom .Bottom-Left .globe {
   margin-left: 0%;
@@ -128,6 +153,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Bottom .Bottom-Right {
+    width: 100%;
+  }
 }
 body {
   width: 90%;
@@ -209,6 +239,7 @@ footer .footer-nav nav a {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  color: black;
 }
 footer .footer-nav nav a:hover {
   color: #1789f3;
