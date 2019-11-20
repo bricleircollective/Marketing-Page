@@ -4,6 +4,12 @@
     .Top{
         margin: 2% 0;
         display: flex;
+        @media @phone, @tablet{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
     }
 
     img{
@@ -21,6 +27,8 @@
             max-width: 100%;
             img{
                 width: 100%;
+                border-radius: 10px;
+                box-shadow: 3px 3px 2px grey;
             }
         }
 
@@ -31,6 +39,7 @@
                 border-radius: 5px;
                 padding-left: 5%;
                 padding-right: 5%;
+                box-shadow: 3px 2px 2px grey;
                 &:hover{
                     color:#F4B400;
                 }
@@ -39,6 +48,7 @@
                 border-radius: 5px;
                 padding-left: 5%;
                 padding-right: 5%;
+                box-shadow: 3px 2px 2px grey;
                 &:hover{
                     color: #007AFF;
                 }
@@ -50,8 +60,12 @@
         margin: auto 2%;
         width: 50%;
         text-align: center;
+        @media @phone, @tablet{
+            width: 100%;
+        }
         h1{
-            font-size: 26px;
+            font-size: 26px; 
+            color: #38b6ff;   
         }
 
         .email-log-in{
@@ -61,8 +75,10 @@
                 align-items: center;
                 input{
                     width: 40%;
+                    border-radius: 10px;
                     @media @phone, @tablet{
-                        width: 50%;
+                        width: 60%;
+                        padding: 2%
                     }
                 }
             }
@@ -71,11 +87,12 @@
                 color: white;
                 font-weight: bold;
                 background: #38b6ff;
+                border-radius: 10px;
                 &:hover{
                     background: rgb(18, 209, 18);
                 }
                 @media @phone, @tablet{
-                    width: 50%;
+                    width: 60%;
                 }
             }
         }
@@ -84,20 +101,32 @@
     .Banner{
         margin: 3% auto;
         width: 100%;
-
-        
+        img {
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px grey;
+        }
     }
     .Bottom {
         display: flex;
         justify-content: center;
         .Bottom-Left{
-            margin: 5%;
+            width: 50%;
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .globe{
-                margin-left: 22%;
+                margin-left: 0%;
+                box-shadow: 3px 2px 2px grey;
+                border-radius: 100%;
             }
         }
         .Bottom-Right{
-            margin: 5%;
+            margin: 0%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
