@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/9f71e3b777.js" crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
@@ -41,8 +41,14 @@
                     <img src="images/introimage.png" class='.img-responsive '>
                 </span>
                 <span class='holder'>
-                    <button class='Button-Google'><i class="fab fa-google-play fa-7x"></i></button>
-                    <button class='Button-Apple'><i class="fab fa-app-store-ios fa-7x"></i></button>
+                    <div class='button-wrapper'>
+                        <p>Sign up on<br>Google Play!</p>
+                        <button class='Button-Google'><i class="fab fa-google-play fa-7x"></i></button>
+                    </div>
+                    <div class='button-wrapper'>
+                        <p>Sign up on<br>the App Store!</p>
+                        <button class='Button-Apple'><i class="fab fa-app-store-ios fa-7x"></i></button>
+                    </div>
                 </span>
             </div>
             <div class='Top-Right'>
@@ -52,6 +58,16 @@
                 <span class='Words'>
                     <p>Mentor me makes it easy for you <br>to get helpful advice from experts in your field.</p>
                 </span>
+                <div class="email-log-in">
+                    <form>
+                        <input placeholder="email..." type="text" name="email"><br>
+                        <br>
+                        <input placeholder="password..." type="text" name="password"><br>
+                        <br>
+                        <input id="submit" type="submit" value="log in">
+                        <p>Not a member? Click <a id="forgot-password" href="#">here!</a></p>
+                    </form>
+                </div>
             </div>
         </section>
         <section class='Banner'>
@@ -59,7 +75,7 @@
         </section>
         <section class='Bottom'>
             <div class='Bottom-Left'>
-                <span><i class="fa fa-globe fa-7x"></i> 
+                <span class='globe'><i class="fa fa-globe fa-7x"></i> 
                 </span>
                 <span class='Words'>
                     <p>modern businesses are global, <br>so why should influence stay local?</p>
