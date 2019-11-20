@@ -11,7 +11,9 @@ h1{
 
 p,a{
     .styler(@color: black);
-        
+    @media @phone, @tablet{
+        .styler(@color: white);
+    }    
 }
 .Nav-Bar{
     display: flex;
@@ -35,7 +37,8 @@ p,a{
                 text-transform: uppercase;
                 font-weight: bold;
                 &:hover{
-                    color: rgb(23, 137, 243);
+                    color: #ffde59;
+                    text-decoration: underline; 
                 }
             }
         }
@@ -46,7 +49,7 @@ p,a{
         div{
             width: 25px;
             height: 3px;
-            background-color: @primary-color;
+            background-color: #38b6ff;
             margin: 5px;
             transition: all 0.3s ease;
         }
@@ -85,7 +88,7 @@ footer{
     }
 }
 
-@media @phone {
+@media @phone, @tablet {
     body {
         overflow-x: hidden;
         
@@ -100,7 +103,7 @@ footer{
                 right: 0px;
                 height: 92vh;
                 top: 8vh;
-                background-color: rgb(240, 243, 243);
+                background-color: #38b6ff;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
