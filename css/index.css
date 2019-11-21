@@ -78,6 +78,9 @@
   font-size: 26px;
   color: #38b6ff;
 }
+.Container .Top-Right p {
+  color: black;
+}
 .Container .Top-Right .email-log-in form {
   display: flex;
   flex-direction: column;
@@ -144,6 +147,12 @@
   align-items: center;
   justify-content: center;
 }
+.Container .Bottom .Bottom-Left .Words {
+  font-size: 1.2rem;
+}
+.Container .Bottom .Bottom-Left .Words p {
+  padding-left: 10%;
+}
 @media (max-width: 500px), (max-width: 800px) {
   .Container .Bottom .Bottom-Left {
     width: 100%;
@@ -154,12 +163,18 @@
   box-shadow: 3px 2px 2px grey;
   border-radius: 100%;
 }
+.Container .Bottom .Bottom-Left .globe:hover {
+  color: #38b6ff;
+}
 .Container .Bottom .Bottom-Right {
   margin: 0%;
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.Container .Bottom .Bottom-Right .Words p {
+  font-size: 1.2rem;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .Container .Bottom .Bottom-Right {
@@ -182,7 +197,7 @@
   width: 60%;
   align-items: center;
   justify-content: center;
-  background: #F4B400;
+  background: #FFDE59;
   text-decoration: none;
   color: white;
   border-radius: 10px;
@@ -241,7 +256,6 @@ a {
 }
 .Nav-Bar .nav-links li a:hover {
   color: #ffde59;
-  text-decoration: underline;
 }
 .Nav-Bar .burger {
   display: none;
