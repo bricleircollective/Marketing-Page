@@ -183,7 +183,7 @@ body .Container .Mentor #mentor-img img {
     width: 100%;
   }
   body .Container .Mentor p {
-    color: black;
+    color: #0f0f0f;
   }
 }
 body .Container .Mentee {
@@ -205,7 +205,7 @@ body .Container .Mentee #mentee-img img {
     width: 100%;
   }
   body .Container .Mentee p {
-    color: black;
+    color: #0f0f0f;
   }
 }
 body .how-it-works {
@@ -229,9 +229,19 @@ body .how-it-works .flow-chart .button-wrapper {
   padding-left: 2%;
   padding-right: 2%;
 }
+body .how-it-works .flow-chart .button-wrapper #question-icon {
+  color: #38b6ff;
+}
+body .how-it-works .flow-chart .button-wrapper #lightbulb-icon {
+  color: #FFDE59;
+}
+body .how-it-works .flow-chart .button-wrapper #seedling-icon {
+  color: #63d463;
+}
 body .how-it-works .flow-chart .button-wrapper p {
   padding: 1%;
   font-size: 1.5rem;
+  text-align: center;
 }
 @media (max-width: 500px), (max-width: 800px) {
   body .how-it-works .flow-chart .button-wrapper p {

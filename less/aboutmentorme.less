@@ -5,7 +5,7 @@ body{
         font-size: 2rem;
         font-weight: bold;
         text-shadow: 1px 1px lightgrey;
-        color: #38b6ff;
+        color: @primary-color;
     }
     .Container{
         display: flex;
@@ -29,7 +29,7 @@ body{
             @media @phone, @tablet{
                 width: 100%;
                 p{
-                    color: black;
+                    color: @base-text-color;
                 }
             }
 
@@ -50,7 +50,7 @@ body{
             @media @phone, @tablet{
                 width: 100%;
                 p{
-                    color: black;
+                    color: @base-text-color;
                 }
             }
         }
@@ -71,9 +71,19 @@ body{
                 align-items: center;
                 padding-left: 2%;
                 padding-right: 2%;
+                #question-icon{
+                    color: @primary-color;
+                }
+                #lightbulb-icon{
+                    color: @secondary-color;
+                }
+                #seedling-icon{
+                    color: @tertiary-color;
+                }
                 p{
                     padding: 1%;
                     font-size: 1.5rem;
+                    text-align: center;
                     @media @phone, @tablet{
                         color:black;
                         display: flex;
@@ -81,7 +91,7 @@ body{
                         align-items: center;
                     }
                     #mentee-how-to{
-                        color: #38b6ff;
+                        color: @primary-color;
                         font-weight: bold;
                         font-family: 'Covered By Your Grace', cursive;
                         text-shadow: 1px 1px lightgrey;
