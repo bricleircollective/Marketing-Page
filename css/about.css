@@ -149,6 +149,12 @@ footer .copyright h3 {
 body {
   width: 90%;
 }
+body h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px lightgrey;
+  color: #38b6ff;
+}
 body .Container {
   display: flex;
 }
@@ -201,4 +207,49 @@ body .Container .Mentee #mentee-img img {
   body .Container .Mentee p {
     color: black;
   }
+}
+body .how-it-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .how-it-works .flow-chart {
+  display: flex;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  body .how-it-works .flow-chart {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+body .how-it-works .flow-chart .button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+body .how-it-works .flow-chart .button-wrapper p {
+  padding: 1%;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  body .how-it-works .flow-chart .button-wrapper p {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body .how-it-works .flow-chart .button-wrapper p #mentee-how-to {
+  color: #38b6ff;
+  font-weight: bold;
+  font-family: 'Covered By Your Grace', cursive;
+  text-shadow: 1px 1px lightgrey;
+}
+body .how-it-works .flow-chart .button-wrapper p #mentor-how-to {
+  color: #38b6ff;
+  font-weight: bold;
+  font-family: 'Covered By Your Grace', cursive;
+  text-shadow: 1px 1px lightgrey;
 }

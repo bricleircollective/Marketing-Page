@@ -2,6 +2,9 @@
 .Container {
   font-family: 'Roboto', sans-serif;
 }
+.Container h1 {
+  font-weight: bold;
+}
 .Container .Top {
   margin: 2% 0;
   display: flex;
@@ -42,7 +45,10 @@
   justify-content: space-around;
 }
 .Container .Top-Left .holder .button-wrapper p {
-  color: black;
+  color: #38b6ff;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px lightgrey;
 }
 .Container .Top-Left .holder .Button-Google {
   border-radius: 5px;
@@ -75,8 +81,9 @@
   }
 }
 .Container .Top-Right h1 {
-  font-size: 26px;
+  font-size: 2rem;
   color: #38b6ff;
+  text-shadow: 1px 1px lightgrey;
 }
 .Container .Top-Right p {
   color: black;
@@ -150,8 +157,14 @@
 .Container .Bottom .Bottom-Left .Words {
   font-size: 1.2rem;
 }
+.Container .Bottom .Bottom-Left .Words #modern-question {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 1.5rem;
+  color: #38b6ff;
+  text-shadow: 1px 1px lightgrey;
+}
 .Container .Bottom .Bottom-Left .Words p {
-  padding-left: 10%;
+  text-align: center;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .Container .Bottom .Bottom-Left {
@@ -203,10 +216,9 @@
   border-radius: 10px;
   padding: 1%;
   text-shadow: 1px 1px black;
-  opacity: 0.7;
 }
 .Container .Bottom .Bottom-Right .Title h2 a:hover {
-  opacity: 1;
+  background: #38b6ff;
 }
 body {
   width: 90%;
