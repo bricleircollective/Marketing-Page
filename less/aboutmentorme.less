@@ -1,0 +1,52 @@
+//About Page Style Content Here
+body{
+    width: 90%;
+    .Container{
+        display: flex;
+        @media @phone, @tablet{
+            align-items: center;
+            flex-direction: column;
+        }
+        .Mentor{
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            margin: 0.5% 0% 0% 0%;
+            flex-direction: column;
+            #mentor-img{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 100%;
+                }
+            }
+            @media @phone, @tablet{
+                width: 100%;
+                p{
+                    color: black;
+                }
+            }
+
+        }
+        .Mentee{
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            margin: 0% 1% 1% 1%;
+            flex-direction: column;
+            #mentee-img{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 100%;
+                }
+            }
+            @media @phone, @tablet{
+                width: 100%;
+                p{
+                    color: black;
+                }
+            }
+        }
+    } 
+} 

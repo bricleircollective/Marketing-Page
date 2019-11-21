@@ -1,6 +1,5 @@
 
 body{
-    //max-width: 900px;
     width: 90%;
     margin: 0 auto;
 }
@@ -24,7 +23,6 @@ p,a{
     .logo-image{
         height: auto;
         width: auto;
-
     }
     .nav-links{
         display: flex;
@@ -38,14 +36,13 @@ p,a{
                 font-weight: bold;
                 &:hover{
                     color: #ffde59;
-                    text-decoration: underline; 
                 }
             }
         }
     }
     .burger {
-        display: none;
-
+        display: none;//display hidden when in desktop mode
+        //div refers to horizontal burger elements
         div{
             width: 25px;
             height: 3px;
@@ -58,7 +55,7 @@ p,a{
 
 footer{
     width: 100%;
-    margin: 0 auto;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     .footer-nav{
@@ -73,6 +70,7 @@ footer{
                 text-decoration: none; 
                 font-weight: bold;
                 text-transform: uppercase;
+                color: black;
                 &:hover{
                     color: rgb(23, 137, 243);
                 }
