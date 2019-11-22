@@ -1,7 +1,22 @@
 @import 'fontawesome-all.min.css';
+@import 'fontawesome-all.min.css';
+.Container {
+  font-family: 'Roboto', sans-serif;
+}
+.Container h1 {
+  font-weight: bold;
+}
 .Container .Top {
   margin: 2% 0;
   display: flex;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 }
 .Container img {
   max-width: 100%;
@@ -13,20 +28,35 @@
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Top-Left {
+    width: 80%;
+  }
+}
 .Container .Top-Left .phone {
   max-width: 100%;
 }
 .Container .Top-Left .phone img {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px grey;
 }
 .Container .Top-Left .holder {
   display: flex;
   justify-content: space-around;
 }
+.Container .Top-Left .holder .button-wrapper p {
+  color: #38b6ff;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px lightgrey;
+}
 .Container .Top-Left .holder .Button-Google {
   border-radius: 5px;
   padding-left: 5%;
   padding-right: 5%;
+  box-shadow: 3px 2px 2px grey;
+  cursor: pointer;
 }
 .Container .Top-Left .holder .Button-Google:hover {
   color: #F4B400;
@@ -35,6 +65,8 @@
   border-radius: 5px;
   padding-left: 5%;
   padding-right: 5%;
+  box-shadow: 3px 2px 2px grey;
+  cursor: pointer;
 }
 .Container .Top-Left .holder .Button-Apple:hover {
   color: #007AFF;
@@ -42,20 +74,152 @@
 .Container .Top-Right {
   margin: auto 2%;
   width: 50%;
+  text-align: center;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Top-Right {
+    width: 100%;
+  }
+}
+.Container .Top-Right h1 {
+  font-size: 2rem;
+  color: #38b6ff;
+  text-shadow: 1px 1px lightgrey;
+}
+.Container .Top-Right p {
+  color: black;
+}
+.Container .Top-Right .email-log-in form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Container .Top-Right .email-log-in form input {
+  width: 40%;
+  padding: 2%;
+  border-radius: 10px;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Top-Right .email-log-in form input {
+    width: 60%;
+    padding: 2%;
+  }
+}
+.Container .Top-Right .email-log-in #submit {
+  width: 30%;
+  padding: 2%;
+  color: white;
+  font-weight: bold;
+  background: #38b6ff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Container .Top-Right .email-log-in #submit:hover {
+  background: #63d463;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Top-Right .email-log-in #submit {
+    width: 60%;
+  }
 }
 .Container .Banner {
   margin: 3% auto;
   width: 100%;
 }
+.Container .Banner img {
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px grey;
+  opacity: 0.7;
+}
+.Container .Banner img:hover {
+  opacity: 1;
+}
 .Container .Bottom {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Container .Bottom p {
+    color: black;
+  }
+}
 .Container .Bottom .Bottom-Left {
-  margin: 5%;
+  width: 50%;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Container .Bottom .Bottom-Left .Words {
+  font-size: 1.2rem;
+}
+.Container .Bottom .Bottom-Left .Words #modern-question {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 1.5rem;
+  color: #38b6ff;
+  text-shadow: 1px 1px lightgrey;
+}
+.Container .Bottom .Bottom-Left .Words p {
+  text-align: center;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Bottom .Bottom-Left {
+    width: 100%;
+  }
+}
+.Container .Bottom .Bottom-Left .globe {
+  margin-left: 0%;
+  box-shadow: 3px 2px 2px grey;
+  border-radius: 100%;
+}
+.Container .Bottom .Bottom-Left .globe:hover {
+  color: #38b6ff;
 }
 .Container .Bottom .Bottom-Right {
-  margin: 5%;
+  margin: 0%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Container .Bottom .Bottom-Right .Words p {
+  font-size: 1.2rem;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .Container .Bottom .Bottom-Right {
+    width: 100%;
+  }
+}
+.Container .Bottom .Bottom-Right .Title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Container .Bottom .Bottom-Right .Title h2 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.Container .Bottom .Bottom-Right .Title h2 a {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  background: #FFDE59;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 1%;
+  text-shadow: 1px 1px black;
+}
+.Container .Bottom .Bottom-Right .Title h2 a:hover {
+  background: #38b6ff;
 }
 body {
   width: 90%;
@@ -71,6 +235,14 @@ a {
   font-family: 'Segoe UI', sans-serif;
   font-weight: 500;
   color: black;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  p,
+  a {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500;
+    color: white;
+  }
 }
 .Nav-Bar {
   display: flex;
@@ -96,7 +268,7 @@ a {
   font-weight: bold;
 }
 .Nav-Bar .nav-links li a:hover {
-  color: #1789f3;
+  color: #ffde59;
 }
 .Nav-Bar .burger {
   display: none;
@@ -104,13 +276,13 @@ a {
 .Nav-Bar .burger div {
   width: 25px;
   height: 3px;
-  background-color: #1460aa;
+  background-color: #38b6ff;
   margin: 5px;
   transition: all 0.3s ease;
 }
 footer {
   width: 100%;
-  margin: 0 auto;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
 }
@@ -128,6 +300,7 @@ footer .footer-nav nav a {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  color: black;
 }
 footer .footer-nav nav a:hover {
   color: #1789f3;
@@ -139,7 +312,7 @@ footer .copyright h3 {
   justify-content: space-around;
   display: flex;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   body {
     overflow-x: hidden;
   }
@@ -152,7 +325,7 @@ footer .copyright h3 {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #f0f3f3;
+    background-color: #38b6ff;
     display: flex;
     flex-direction: column;
     align-items: center;

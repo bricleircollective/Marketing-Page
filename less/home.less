@@ -1,9 +1,18 @@
 
 .Container{
-        
+    font-family: 'Roboto', sans-serif;
+    h1 {
+        font-weight: bold;
+    }
     .Top{
         margin: 2% 0;
         display: flex;
+        @media @phone, @tablet{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
     }
 
     img{
@@ -16,31 +25,48 @@
         width: 50%;
         display: flex;
         flex-direction: column;
+        @media @phone, @tablet{
+            width: 80%;
+        }
 
         .phone{
             max-width: 100%;
             img{
                 width: 100%;
+                border-radius: 10px;
+                box-shadow: 3px 3px 2px grey;
             }
         }
 
         .holder{
             display: flex;
             justify-content: space-around;
+            .button-wrapper{
+                p{
+                    color: @primary-color;
+                    font-family: 'Covered By Your Grace', cursive;
+                    font-size: 1.5rem;
+                    text-shadow: 1px 1px lightgrey;
+                }
+            }
             .Button-Google{
                 border-radius: 5px;
                 padding-left: 5%;
                 padding-right: 5%;
+                box-shadow: 3px 2px 2px grey;
+                cursor: pointer;
                 &:hover{
-                    color:#F4B400;
+                    color: @google-color;
                 }
             }
             .Button-Apple{
                 border-radius: 5px;
                 padding-left: 5%;
                 padding-right: 5%;
+                box-shadow: 3px 2px 2px grey;
+                cursor: pointer;
                 &:hover{
-                    color: #007AFF;
+                    color: @apple-color;
                 }
             }
         }
@@ -49,22 +75,145 @@
     .Top-Right{
         margin: auto 2%;
         width: 50%;
+        text-align: center;
+        @media @phone, @tablet{
+            width: 100%;
+        }
+        h1{
+            font-size: 2rem; 
+            color: @primary-color; 
+            text-shadow: 1px 1px lightgrey;  
+        }
+        p{
+            color: black;
+        }
+
+        .email-log-in{
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                input{
+                    width: 40%;
+                    padding: 2%;
+                    border-radius: 10px;
+                    @media @phone, @tablet{
+                        width: 60%;
+                        padding: 2%
+                    }
+                }
+            }
+            #submit {
+                width: 30%;
+                padding: 2%;
+                color: white;
+                font-weight: bold;
+                background: @primary-color;
+                border-radius: 10px;
+                cursor: pointer;
+                &:hover{
+                    background: @tertiary-color;
+                }
+                @media @phone, @tablet{
+                    width: 60%;
+                }
+            }
+        }
     }
 
     .Banner{
         margin: 3% auto;
         width: 100%;
-
-        
+        img {
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px grey;
+            opacity: 0.7;
+            &:hover{
+                opacity: 1;
+            }
+        }
     }
     .Bottom {
         display: flex;
         justify-content: center;
+        @media @phone, @tablet{
+            flex-direction: column;
+            align-items: center;
+            p {
+                color: black;
+            }
+        }
         .Bottom-Left{
-            margin: 5%;
+            width: 50%;
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .Words{
+                font-size: 1.2rem;
+                #modern-question{
+                    font-family: 'Covered By Your Grace', cursive;
+                    font-size: 1.5rem;
+                    color: @primary-color;
+                    text-shadow: 1px 1px lightgrey;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+            @media @phone, @tablet{
+                width: 100%;
+            }
+            .globe{
+                margin-left: 0%;
+                box-shadow: 3px 2px 2px grey;
+                border-radius: 100%;
+                &:hover{
+                    color: @primary-color;
+                }
+            }
         }
         .Bottom-Right{
-            margin: 5%;
+            margin: 0%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .Words{
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+            @media @phone, @tablet{
+                width: 100%;
+            }
+            .Title{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                h2{
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    a{
+                        display: flex;
+                        width: 60%;
+                        align-items: center;
+                        justify-content: center;
+                        background: @secondary-color;
+                        text-decoration: none;
+                        color: white;
+                        border-radius: 10px;
+                        padding: 1%;
+                        text-shadow: 1px 1px black;
+                        &:hover{
+                            background: @primary-color;
+                        }
+                    }
+                }
+            }
         }
     }
 }
